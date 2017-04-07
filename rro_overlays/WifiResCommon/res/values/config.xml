@@ -99,4 +99,7 @@
         <item>-65</item> <!-- [-71, -65)                   3 -->
                          <!-- [-65, +infinity)             4 -->
     </integer-array>
+
+    <!-- Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Nothing Phone (1)</string>
 </resources>
