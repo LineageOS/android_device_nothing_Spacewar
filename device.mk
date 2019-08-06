@@ -254,7 +254,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.default \
-    init.class_main.sh \
     init.kernel.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
