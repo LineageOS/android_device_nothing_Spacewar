@@ -518,15 +518,6 @@
     </string-array>
 
     <!-- This setting is deprecated, please use
-         com.android.networkstack.tethering.R.array.config_tether_upstream_types. -->
-    <integer-array translatable="false" name="config_tether_upstream_types">
-        <item>0</item>
-        <item>1</item>
-        <item>5</item>
-        <item>7</item>
-    </integer-array>
-
-    <!-- This setting is deprecated, please use
          com.android.networkstack.tethering.R.array.config_tether_usb_regexs instead. -->
     <string-array translatable="false" name="config_tether_usb_regexs">
         <item>"usb\\d"</item>
