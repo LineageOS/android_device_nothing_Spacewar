@@ -43,7 +43,6 @@ ro.nfc.port=I2C
 # Radio
 persist.vendor.radio.atfwd.start=true
 ril.subscription.types=NV,RUIM
-ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 
 # RmNet
