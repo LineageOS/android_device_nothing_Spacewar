@@ -332,6 +332,10 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libstagefrighthw
 
+# Perfd (dummy)
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
