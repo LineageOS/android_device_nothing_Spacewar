@@ -42,7 +42,6 @@ ro.nfc.port=I2C
 # Radio
 persist.vendor.radio.atfwd.start=true
 ril.subscription.types=NV,RUIM
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 
