@@ -303,6 +303,7 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.pn8x \
+    com.android.nfc_extras \
     Tag
 
 # OMX
