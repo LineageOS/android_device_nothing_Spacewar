@@ -32,9 +32,6 @@
 import /vendor/etc/init/hw/init.qti.kernel.test.rc
 
 on early-init
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
-
     # Mount tracefs in /sys/kernel/tracing as CONFIG_DEBUG_FS might be
     # disabled and /sys/kernel/debug/tracing might not be available
     mount tracefs tracefs /sys/kernel/tracing
@@ -61,9 +58,6 @@ on init
     write /dev/cpuctl/background/cpu.uclamp.colocate 0
     write /dev/cpuctl/foreground/cpu.uclamp.colocate 0
     write /dev/cpuctl/top-app/cpu.uclamp.colocate 1
-
-on post-fs
-    chmod 0755 /sys/kernel/debug/tracing
 
 on early-boot
     # Allow subsystem (modem etc) debugging

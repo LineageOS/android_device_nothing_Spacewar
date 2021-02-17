@@ -87,8 +87,6 @@ on fs
     chmod 666 /sys/bus/i2c/devices/1-0034/rw
     chmod 666 /sys/bus/i2c/devices/1-0035/reg
     chmod 666 /sys/bus/i2c/devices/1-0035/rw
-    chmod 666 /sys/kernel/debug/tfa98xx-34/rpc
-    chmod 666 /sys/kernel/debug/tfa98xx-35/rpc
     chmod 666 /proc/tfa98xx-34/rpc
     chmod 666 /proc/tfa98xx-35/rpc
     chmod 666 /sys/class/qcom-haptics/lra_calibration
