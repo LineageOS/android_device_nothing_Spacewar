@@ -343,6 +343,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.nothing-libperfmgr \
     android.hardware.power@1.3.vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.nothing
