@@ -407,3 +407,9 @@ on property:sys.ssc_drva_test.gyro=start
 on property:sys.ssc_drva_test.gyro=stop
    stop vendor.ssc_drva_test.gyro
 # @}
+
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
