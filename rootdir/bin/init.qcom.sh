@@ -457,19 +457,6 @@ then
     chown -h root.oem_2902 /sys/devices/platform/soc/6048000.tmc/coresight-tmc-etr/block_size
     chmod 660 /sys/devices/platform/soc/6048000.tmc/coresight-tmc-etr/block_size
 fi
-#check build variant for printk logging
-#current default minimum boot-time-default
-buildvariant=`getprop ro.build.type`
-case "$buildvariant" in
-    "userdebug" | "eng")
-        #set default loglevel to KERN_INFO
-        echo "4 6 1 7" > /proc/sys/kernel/printk
-        ;;
-    *)
-        #set default loglevel to KERN_WARNING
-        echo "4 4 1 4" > /proc/sys/kernel/printk
-        ;;
-esac
 
 #lei.wang add for ABR-4885 to setprop hwid_version
 if [ -f /proc/hwid ]; then
