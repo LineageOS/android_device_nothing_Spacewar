@@ -1250,12 +1250,6 @@ system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 
-# QTI service tracker
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
-
 # Qualcomm SoC helper
 vendor/lib/libsoc_helper.so
 vendor/lib64/libsoc_helper.so

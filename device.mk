@@ -342,10 +342,6 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     libvndfwk_detect_jni.qti.vendor
 
-# QTI service tracker
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.2.vendor
-
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
