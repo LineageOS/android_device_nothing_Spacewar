@@ -3,7 +3,6 @@ use.voice.path.for.pcm.voip=true
 
 # Bluetooth
 persist.vendor.bluetooth.modem_nv_support=true
-persist.vendor.btstack.aac_frm_ctl.enabled=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Charger
