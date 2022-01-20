@@ -207,12 +207,6 @@
         <item>94</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
-    <!-- Boolean indicating if current platform supports BLE peripheral mode -->
-    <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
-
-    <!-- Boolean indicating if current platform supports HFP inband ringing -->
-    <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
-
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
         <item>260</item>
