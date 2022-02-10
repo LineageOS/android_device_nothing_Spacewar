@@ -10,7 +10,7 @@ ro.af.client_heap_size_kbyte=7168
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
-bluetooth.profile.asha.central=true
+bluetooth.profile.asha.central.enabled=true
 
 # Thermal
 persist.vendor.thermal.config=/vendor/etc/thermal-engine.conf
