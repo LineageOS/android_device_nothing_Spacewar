@@ -182,6 +182,9 @@ firmware_directories /vendor/firmware_mnt/image/ /mnt/vendor/persist/
 /dev/st21nfc              0660   nfc        nfc
 # @}
 
+#rawdump
+/dev/block/platform/soc/*/by-name/rawdump       0660   root     system
+
 # wlan
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system
