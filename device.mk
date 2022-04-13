@@ -102,10 +102,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_yupik/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_yupik/android.hardware.sensor.stepdetector.xml
 
-# AID/fs configs
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
