@@ -134,9 +134,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # QSD
 persist.vendor.qcomsysd.enabled=1
 
-# QSPM
-ro.vendor.qspm.enable=true
-
 # QTEE
 persist.vendor.qteeconnector.retrying_interval=30
 persist.vendor.qteeconnector.retrying_timeout=2000
