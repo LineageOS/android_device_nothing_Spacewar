@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Idle current for bluetooth controller. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_idle_cur_ma">6</integer>
-
-    <!-- Operating volatage for bluetooth controller. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3700</integer>
-
-    <!-- Rx current for bluetooth controller. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_rx_cur_ma">28</integer>
-
-    <!-- Tx current for bluetooth controller. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_tx_cur_ma">36</integer>
-
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
          try to start this dream if possible.  The dream should typically call startDozing()
