@@ -61,9 +61,6 @@ persist.timed.enable=true
 # Vendor
 ro.vendor.qti.va_aosp.support=1
 
-# WiFi Display
-persist.debug.wfd.enable=1
-
 # Nt Feature
 ro.build.nothing.feature.base=0x4458438124a040126b4247b97ffL
 ro.build.nothing.feature.diff.device.Spacewar=0x8a0042a4041a032c34800L
