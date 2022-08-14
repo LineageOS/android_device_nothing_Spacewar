@@ -101,7 +101,9 @@ vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
+vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/lib_lvacfs.so
+vendor/lib/liba2dpoffload.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
@@ -112,6 +114,7 @@ vendor/lib/libdrc.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/liblvacfs_wrapper.so
 vendor/lib/libqtigef.so
+vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
 
 # Audio amplifier
