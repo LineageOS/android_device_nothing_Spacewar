@@ -54,6 +54,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# Paranoid Doze
+PRODUCT_PACKAGES += \
+    ParanoidGlyph
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
