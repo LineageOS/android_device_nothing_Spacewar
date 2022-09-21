@@ -122,6 +122,17 @@ private:
   int mPollFd;
 };
 
+class DoubleTapSensor : public SysfsPollingOneShotSensor {
+public:
+  DoubleTapSensor(int32_t sensorHandle, ISensorsEventCallback *callback)
+      : SysfsPollingOneShotSensor(
+            sensorHandle, callback,
+            "/sys/class/spi_master/spi0/spi0.0/fts_gesture_double_tap_pressed",
+            "Double Tap Sensor", "org.lineageos.sensor.double_tap",
+            static_cast<SensorType>(
+                static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 1)) {}
+};
+
 }  // namespace implementation
 }  // namespace subhal
 }  // namespace V2_1
