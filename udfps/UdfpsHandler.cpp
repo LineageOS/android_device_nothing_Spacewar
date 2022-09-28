@@ -35,7 +35,7 @@ static bool readBool(int fd) {
     return c != '0';
 }
 
-class NothingUdfpsHander : public UdfpsHandler {
+class NothingUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t *device) {
         mDevice = device;
@@ -86,7 +86,7 @@ class NothingUdfpsHander : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new NothingUdfpsHander();
+    return new NothingUdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {
