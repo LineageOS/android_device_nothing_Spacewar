@@ -131,9 +131,6 @@ debug.stagefright.omx_default_rank=0
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
-# QSD
-persist.vendor.qcomsysd.enabled=1
-
 # QTEE
 persist.vendor.qteeconnector.retrying_interval=30
 persist.vendor.qteeconnector.retrying_timeout=2000
