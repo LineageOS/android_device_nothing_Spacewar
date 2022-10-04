@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from Spacewar-S1.1-220813-1608.
+# All unpinned blobs are extracted from Spacewar-S1.1-220921-2238.
 
 # ACDB
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
@@ -223,6 +223,16 @@ vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
+# Bluetooth (LHDC)
+system/lib/liblhdc.so
+system/lib/liblhdcBT_enc.so
+system/lib/liblhdcv5.so
+system/lib/liblhdcv5BT_enc.so
+system/lib64/liblhdc.so
+system/lib64/liblhdcBT_enc.so
+system/lib64/liblhdcv5.so
+system/lib64/liblhdcv5BT_enc.so
+
 # Camera
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/vidhance_calibration
@@ -301,6 +311,7 @@ vendor/lib64/camera/components/com.arcsoft.node.picauto.so
 vendor/lib64/camera/components/com.arcsoft.node.realtimebokeh.so
 vendor/lib64/camera/components/com.arcsoft.node.singlebokeh.so
 vendor/lib64/camera/components/com.arcsoft.node.videosn.so
+vendor/lib64/camera/components/com.nothing.node.motion.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
@@ -440,6 +451,7 @@ vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
+vendor/lib64/libmorpho_MotionSensor.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libofflinedump.so
