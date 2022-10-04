@@ -946,6 +946,7 @@ vendor/etc/msm_irqbalance.conf
 
 # Kernel
 vendor/bin/vendor_modprobe.sh
+vendor/lib/modules/modules.blocklist
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
