@@ -5,6 +5,9 @@ use.voice.path.for.pcm.voip=true
 persist.vendor.bluetooth.modem_nv_support=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 
+# Camera
+camera.disable_zsl_mode=true
+
 # Charger
 ro.charger.enable_suspend=1
 
