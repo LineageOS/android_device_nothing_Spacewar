@@ -213,6 +213,9 @@ on boot
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/exclamation_leds_effect
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_leds_effect
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_br
+    #add by Dylan for TFT-404
+    chmod 0660 /sys/devices/platform/soc/c440000.qcom,spmi/driver/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/force_key_warm_reset
+    chown system system /sys/devices/platform/soc/c440000.qcom,spmi/driver/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/force_key_warm_reset
     #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
@@ -230,9 +233,17 @@ on boot
     #start ft-diag
     start ft_diag
 
-#add by zh for ABR-3187
-on property:persist.sys.runin.reboot=false
-   write /sys/class/qcom-battery/usb_charger_en 0
+
+#add by Dylan for TFT-404
+on property:persist.vendor.stability.force_key_warm_reset=1
+    write /sys/devices/platform/soc/c440000.qcom,spmi/driver/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/force_key_warm_reset 1
+
+on property:persist.vendor.stability.force_key_warm_reset=0
+    write /sys/devices/platform/soc/c440000.qcom,spmi/driver/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/force_key_warm_reset 0
+
+#add by Dylan for TFT-456
+on property:sys.system_server.start_count=1
+    write /sys/devices/virtual/NT/NT_reserve_kernel_log/boot_stage_systemserver 1
 
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
@@ -354,6 +365,13 @@ on property:sys.ship_mode.enable=0
 
 on property:sys.ship_mode.enable=1
    write /sys/class/qcom-battery/ship_mode_en 1
+# @}
+
+# change by nick for charge @{
+on property:sys.boot_completed=1 && property:persist.sys.runin.charging=false
+    write /sys/class/qcom-battery/usb_charger_en 0
+on property:sys.boot_completed=1 && property:persist.sys.runin.charging=true
+    write /sys/class/qcom-battery/usb_charger_en 1
 # @}
 
 # leiwang add for ft_diag @{
