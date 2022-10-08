@@ -411,5 +411,4 @@ on property:sys.ssc_drva_test.gyro=stop
 # @}
 
 on property:sys.boot_completed=1
-    stop health-hal-2-1
-    start health-hal-2-1
+    restart health-hal-2-1
