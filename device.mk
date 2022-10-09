@@ -25,6 +25,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/nothing \
     vendor/nxp/nfc \
     vendor/qcom/opensource/usb/etc
 
@@ -202,7 +203,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3.vendor
+    android.hardware.biometrics.fingerprint@2.3-service.nothing
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
