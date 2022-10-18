@@ -5,7 +5,4 @@
             1 - LOCAL HBM
     -->
     <integer name="config_udfpsHbmType">0</integer>
-
-    <!-- Udfps HBM provider class name -->
-    <string name="config_udfpsHbmProviderComponent">com.android.systemui.biometrics.NtUdfpsHbmProvider</string>
 </resources>
