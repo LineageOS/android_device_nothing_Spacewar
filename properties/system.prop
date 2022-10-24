@@ -3,7 +3,6 @@ use.voice.path.for.pcm.voip=true
 
 # Bluetooth
 persist.vendor.bluetooth.modem_nv_support=true
-ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Camera
 camera.disable_zsl_mode=true
