@@ -1,0 +1,27 @@
+type nothingparts_app, domain;
+typeattribute nothingparts_app mlstrustedsubject;
+
+app_domain(nothingparts_app)
+
+allow nothingparts_app {
+  activity_service
+  audio_service
+  autofill_service
+  batteryproperties_service
+  batterystats_service
+  content_capture_service
+  game_service
+  gpu_service
+  hint_service
+  netstats_service
+  surfaceflinger_service
+}:service_manager find;
+
+allow nothingparts_app system_app_data_file:dir create_dir_perms;
+allow nothingparts_app system_app_data_file:{
+  file
+  lnk_file
+} create_file_perms;
+
+allow nothingparts_app sysfs_leds:dir r_dir_perms;
+allow nothingparts_app sysfs_leds:file rw_file_perms;

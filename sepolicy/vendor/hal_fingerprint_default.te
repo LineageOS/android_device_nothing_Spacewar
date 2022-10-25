@@ -1,0 +1,11 @@
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+
+allow hal_fingerprint_default {
+  fingerprint_device
+  tee_device
+}:chr_file rw_file_perms;
+
+set_prop(hal_fingerprint_default, system_fingerprint_prop)
+get_prop(hal_fingerprint_default, system_fingerprint_prop)
+
+r_dir_file(hal_fingerprint_default, vendor_sysfs_graphics)
