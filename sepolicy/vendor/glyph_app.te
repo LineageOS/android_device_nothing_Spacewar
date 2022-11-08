@@ -1,0 +1,7 @@
+# Define Glyph app domain
+type glyph_app, domain;
+app_domain(glyph_app)
+
+# Allow Glyph to read and write to LED nodes
+r_dir_file(glyph_app, sysfs_leds)
+allow glyph_app sysfs_leds:file rw_file_perms;
