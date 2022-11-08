@@ -26,6 +26,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=Spacewar
+    PRODUCT_NAME=Spacewar \
+    PRIVATE_BUILD_DESC="Spacewar-user 12 SKQ1.211230.001 1666412462 release-keys"
 
 BUILD_FINGERPRINT := Nothing/Spacewar/Spacewar:12/SKQ1.211230.001/1666412462:user/release-keys
