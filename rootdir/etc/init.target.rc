@@ -223,9 +223,6 @@ on boot
     write /proc/sys/kernel/hung_task_check_interval_secs 0
     write /proc/sys/kernel/hung_task_selective_monitoring 0
 
-    #add by Dylan for TFT-404
-    chmod 0660 /sys/devices/platform/soc/c440000.qcom,spmi/driver/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/force_key_warm_reset
-    chown system system /sys/devices/platform/soc/c440000.qcom,spmi/driver/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/force_key_warm_reset
     #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
@@ -342,20 +339,6 @@ service fan_control_turn_off /vendor/bin/fan_control 0
     disabled
     oneshot
 
-#lei.wang add for fix ABR-460
-#synchronization vendor properties@{
-on property:persist.vendor.camera.singlebokeh.enable=*
-   setprop persist.vendor.camera.vendor_singlebokeh.enable ${persist.vendor.camera.singlebokeh.enable}
-#@}
-
-#dandy add for fix ABR-942
-#Increase boot light effect@{
-on property:service.bootanim.exit=0
-   write /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/bootan_leds_effect 1
-
-on property:service.bootanim.exit=1
-   write /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/bootan_leds_effect 0
-#@}
 #ningfei add for fix ABR-3149
 #add system group for charger node@{
 on property:service.bootanim.exit=1
@@ -388,42 +371,6 @@ on property:sys.boot_completed=1 && property:persist.sys.runin.charging=false
     write /sys/class/qcom-battery/usb_charger_en 0
 on property:sys.boot_completed=1 && property:persist.sys.runin.charging=true
     write /sys/class/qcom-battery/usb_charger_en 1
-# @}
-
-# leiwang add for ft_diag @{
-service ft_diag /vendor/bin/ft_diag
-   class main
-   user root
-   group system
-# @}
-
-# leiwang add for A+G sensor calibration @{
-service vendor.ssc_drva_test.accel /vendor/bin/ssc_drva_test -sensor=accel -factory_test=2 -duration=3
-   class core
-   user system
-   group system
-   disabled
-   oneshot
-
-service vendor.ssc_drva_test.gyro /vendor/bin/ssc_drva_test -sensor=gyro -factory_test=2 -duration=3
-   class core
-   user system
-   group system
-   disabled
-   oneshot
-
-on property:sys.ssc_drva_test.accel=start
-   start vendor.ssc_drva_test.accel
-
-on property:sys.ssc_drva_test.accel=stop
-   stop vendor.ssc_drva_test.accel
-
-
-on property:sys.ssc_drva_test.gyro=start
-   start vendor.ssc_drva_test.gyro
-
-on property:sys.ssc_drva_test.gyro=stop
-   stop vendor.ssc_drva_test.gyro
 # @}
 
 service adsprpcd /vendor/bin/adsprpcd
