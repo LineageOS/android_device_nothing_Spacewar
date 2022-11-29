@@ -118,12 +118,10 @@ vendor/lib/libsurround_3mic_proc.so
 vendor/firmware/tfa98xx.cnt
 
 # Audio configs
-vendor/etc/audio/audio_policy_configuration.xml
 vendor/etc/audio/sku_yupik/audio_effects.xml
 vendor/etc/audio/sku_yupik/audio_io_policy.conf
 vendor/etc/audio/sku_yupik/audio_platform_info_intcodec.xml
 vendor/etc/audio/sku_yupik/audio_platform_info_yupikqrd.xml
-vendor/etc/audio/sku_yupik/audio_policy_configuration.xml
 vendor/etc/audio/sku_yupik/audio_policy_volumes.xml
 vendor/etc/audio/sku_yupik/audio_tuning_mixer.txt
 vendor/etc/audio/sku_yupik/default_volume_tables.xml
