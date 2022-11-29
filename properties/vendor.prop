@@ -10,6 +10,7 @@ persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.ha_proxy.enabled=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 ro.config.vc_call_vol_steps=7
+ro.vendor.audio.sdk.fluencetype=fluence
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=192
