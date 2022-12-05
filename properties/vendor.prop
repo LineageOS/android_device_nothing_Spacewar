@@ -88,9 +88,6 @@ vendor.gralloc.disable_ubwc=0
 persist.vendor.dpm.idletimer.mode=default
 persist.vendor.dpmhalservice.enable=1
 
-# Fingerprint
-ro.bootloader.locked=0
-
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 

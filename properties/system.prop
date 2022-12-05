@@ -17,6 +17,9 @@ persist.vendor.cne.feature=1
 debug.sf.enable_hwc_vds=1
 persist.sys.sf.native_mode=260
 
+# Fingerprint
+ro.bootloader.locked=0
+
 # Media
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
