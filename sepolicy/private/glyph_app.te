@@ -1,10 +1,29 @@
-# Define Glyph app domain
 type glyph_app, domain;
+typeattribute glyph_app mlstrustedsubject;
+
 app_domain(glyph_app)
 
-# Allow Glyph to read and write to LED nodes
-r_dir_file(glyph_app, sysfs_leds)
-allow glyph_app sysfs_leds:file rw_file_perms;
+allow glyph_app {
+  activity_service
+  activity_task_service
+  audio_service
+  autofill_service
+  batteryproperties_service
+  batterystats_service
+  content_capture_service
+  game_service
+  gpu_service
+  hint_service
+  netstats_service
+  surfaceflinger_service
+  vibrator_manager_service
+}:service_manager find;
 
-# Allow Glyph to find the activity service
-allow glyph_app activity_service:service_manager find;
+allow glyph_app system_app_data_file:dir create_dir_perms;
+allow glyph_app system_app_data_file:{
+  file
+  lnk_file
+} create_file_perms;
+
+allow glyph_app sysfs_leds:dir r_dir_perms;
+allow glyph_app sysfs_leds:file rw_file_perms;
