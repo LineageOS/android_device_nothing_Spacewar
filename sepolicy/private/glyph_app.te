@@ -16,6 +16,7 @@ allow glyph_app {
   hint_service
   netstats_service
   surfaceflinger_service
+  vendor_perf_service
   vibrator_manager_service
 }:service_manager find;
 
