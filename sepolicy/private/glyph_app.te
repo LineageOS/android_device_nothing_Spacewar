@@ -15,6 +15,7 @@ allow glyph_app {
   gpu_service
   hint_service
   netstats_service
+  sensorservice_service
   surfaceflinger_service
   vendor_perf_service
   vibrator_manager_service
