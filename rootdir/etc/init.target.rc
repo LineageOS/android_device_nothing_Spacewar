@@ -192,6 +192,8 @@ on boot
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/glo_current
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/rear_cam_led_br
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/front_cam_led_br
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/vline_leds_br
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/dot_led_br
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/horse_race_leds_br
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/round_leds_br
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/single_led_br
