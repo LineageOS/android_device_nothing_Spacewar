@@ -409,6 +409,3 @@ on property:sys.ssc_drva_test.gyro=start
 on property:sys.ssc_drva_test.gyro=stop
    stop vendor.ssc_drva_test.gyro
 # @}
-
-on property:sys.boot_completed=1
-    restart health-hal-2-1
