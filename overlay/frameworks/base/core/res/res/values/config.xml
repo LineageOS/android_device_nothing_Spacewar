@@ -577,4 +577,7 @@
         <item>"0,1"</item>
         <item>"7,1"</item>
     </string-array>
+
+    <!-- Colon separated list of package names that should be granted Notification Listener access -->
+    <string name="config_defaultListenerAccessPackages" translatable="false">co.aospa.glyph</string>
 </resources>
