@@ -54,7 +54,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
-# Paranoid Doze
+# Paranoid Glyph
 PRODUCT_PACKAGES += \
     ParanoidGlyph
 
