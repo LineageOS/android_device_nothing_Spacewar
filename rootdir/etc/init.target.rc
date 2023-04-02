@@ -355,8 +355,6 @@ on property:service.bootanim.exit=1
     chown system system /sys/class/qcom-battery/charge_pump_enable
     # add for ABR-2547
     chown system system /sys/class/qcom-battery/charge_power
-    # add for ABR-12041
-    write /sys/class/qcom-battery/slowcharge_en 0
 #@}
 
 # funk.tan for ship_mode @{
