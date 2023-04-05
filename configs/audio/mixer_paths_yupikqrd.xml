@@ -2423,10 +2423,10 @@
         <path name="dmic-endfire"/>
     </path>
     <path name="voice-dmic-ef">
-        <path name="dmic-endfire"/>
+        <path name="handset-mic"/>
     </path>
     <path name="voice-speaker-dmic-ef">
-        <path name="speaker-dmic-endfire"/>
+        <path name="voice-speaker-mic"/>
     </path>
     <path name="voice-rec-dmic-ef">
         <path name="dmic-endfire"/>
