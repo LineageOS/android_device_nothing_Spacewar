@@ -43,3 +43,6 @@ on fs
     mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /firmware ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
+
+on property:init.svc.fastbootd=running
+    umount /firmware
