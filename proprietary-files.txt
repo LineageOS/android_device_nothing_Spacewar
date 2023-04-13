@@ -126,7 +126,6 @@ vendor/etc/audio/sku_yupik/audio_io_policy.conf
 vendor/etc/audio/sku_yupik/audio_platform_info_intcodec.xml
 vendor/etc/audio/sku_yupik/audio_platform_info_yupikqrd.xml
 vendor/etc/audio/sku_yupik/audio_tuning_mixer.txt
-vendor/etc/audio/sku_yupik/mixer_paths_yupikqrd.xml
 vendor/etc/audio/sku_yupik/sound_trigger_mixer_paths_yupikqrd.xml
 vendor/etc/audio/sku_yupik/sound_trigger_platform_info.xml
 vendor/etc/audio_effects.xml
