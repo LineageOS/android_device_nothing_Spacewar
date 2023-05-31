@@ -32,6 +32,9 @@ allow glyph_app system_app_data_file:{
 allow glyph_app sysfs_leds:dir r_dir_perms;
 allow glyph_app sysfs_leds:file rw_file_perms;
 
+allow glyph_app sysfs_powershare:dir r_dir_perms;
+allow glyph_app sysfs_powershare:file r_file_perms;
+
 allow glyph_app mnt_vendor_file:dir r_dir_perms;
 allow glyph_app mnt_vendor_file:file r_file_perms;
 allow glyph_app thermal_service:service_manager find;
