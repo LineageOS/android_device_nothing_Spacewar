@@ -3,6 +3,11 @@
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">0dp</dimen>
 
+    <!-- Default device corner radius, used for assist UI -->
+    <dimen name="config_rounded_mask_size">107px</dimen>
+    <dimen name="config_rounded_mask_size_top">107px</dimen>
+    <dimen name="config_rounded_mask_size_bottom">107px</dimen>
+    
     <!-- Bottom margin size when fingerprint in display is active -->
     <dimen name="keyguard_indication_margin_bottom">16dp</dimen>
 
