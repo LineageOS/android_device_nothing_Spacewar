@@ -58,7 +58,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Paranoid Glyph
 PRODUCT_PACKAGES += \
-    ParanoidGlyph
+    ParanoidGlyphPhone1
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
