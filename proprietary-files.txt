@@ -1619,10 +1619,6 @@ vendor/firmware/vpu20_4v_unsigned.mbn
 vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
 
-# WiFi configs
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
-
 # WiFi Display
 system/framework/WfdCommon.jar
 system_ext/bin/wfdservice
