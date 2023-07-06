@@ -1128,9 +1128,6 @@ vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/video_system_specs.json
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 
-# Native public libraries
-vendor/etc/public.libraries.txt
-
 # NFC configs
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
