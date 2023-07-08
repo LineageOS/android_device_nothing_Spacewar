@@ -25,6 +25,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/nothing \
     vendor/nxp/nfc \
+    vendor/nxp/secure_element \
     vendor/qcom/opensource/usb/etc
 
 # A/B
