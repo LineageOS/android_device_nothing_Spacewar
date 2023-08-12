@@ -1,2 +1,5 @@
 # Fingerprint
 vendor_internal_prop(system_fingerprint_prop)
+
+# PowerShare
+type sysfs_powershare, sysfs_type, fs_type;
