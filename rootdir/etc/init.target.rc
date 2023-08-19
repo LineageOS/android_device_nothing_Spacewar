@@ -139,6 +139,7 @@ on post-fs-data
 
 on early-boot
     start vendor.sensors
+    verity_update_state
 
 on boot
     write /dev/cpuset/audio-app/cpus 1-2
@@ -213,6 +214,15 @@ on boot
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/exclamation_leds_effect
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_leds_effect
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_br
+
+    # Hung_task
+    write /proc/sys/kernel/hung_task_timeout_secs 180
+    write /proc/sys/kernel/hung_task_warnings 10
+    write /proc/sys/kernel/hung_task_check_count 32768
+    write /proc/sys/kernel/hung_task_panic 1
+    write /proc/sys/kernel/hung_task_check_interval_secs 0
+    write /proc/sys/kernel/hung_task_selective_monitoring 0
+
     #add by Dylan for TFT-404
     chmod 0660 /sys/devices/platform/soc/c440000.qcom,spmi/driver/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/force_key_warm_reset
     chown system system /sys/devices/platform/soc/c440000.qcom,spmi/driver/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/force_key_warm_reset
@@ -233,6 +243,12 @@ on boot
     #start ft-diag
     start ft_diag
 
+#add by Dylan for TFT-1024
+on property:persist.sys.mglru_enable=true
+    write /sys/kernel/mm/lru_gen/enabled 1
+
+on property:persist.sys.mglru_enable=false
+    write /sys/kernel/mm/lru_gen/enabled n
 
 #add by Dylan for TFT-404
 on property:persist.vendor.stability.force_key_warm_reset=1
@@ -351,6 +367,8 @@ on property:service.bootanim.exit=1
     chown system system /sys/class/qcom-battery/usb_charger_en
     # add for slowcharge need to write charger
     chown system system /sys/class/qcom-battery/slowcharge_en
+    # add for wls charge online config
+    chown system system /sys/class/qcom-battery/wls_online_param
     # add for slowcharge need to write charger
     chown system system /sys/class/qcom-battery/charge_pump_enable
     # add for ABR-2547
@@ -413,3 +431,14 @@ service adsprpcd /vendor/bin/adsprpcd
    user media
    group media
    disabled
+
+on property:sys.touch.edge_mode.enable=*
+    write sys/class/spi_master/spi0/spi0.0/fts_edge_mode ${sys.touch.edge_mode.enable}
+on property:sys.touch.single_en.enable=1
+    write sys/bus/spi/devices/spi0.0/fts_gesture_mode 1
+on property:sys.touch.single_en.enable=0
+    write sys/bus/spi/devices/spi0.0/fts_gesture_mode 2
+on property:sys.touch.fod_en.enable=1
+    write sys/bus/spi/devices/spi0.0/fts_gesture_mode 3
+on property:sys.touch.fod_en.enable=0
+    write sys/bus/spi/devices/spi0.0/fts_gesture_mode 4
