@@ -2,5 +2,9 @@
   {
     "repository": "android_kernel_nothing_sm7325",
     "target_path": "kernel/nothing/sm7325"
+  },
+  {
+    "repository": "android_hardware_nothing",
+    "target_path": "hardware/nothing"
   }
 ]
