@@ -2,7 +2,14 @@
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary               u:object_r:vendor_sysfs_graphics:s0
 
 # Glyph LEDs
-genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/single_led_br u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/single_led_br      u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/all_white_leds_br  u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/rear_cam_led_br    u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/vline_leds_br      u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/round_leds_br      u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/horse_race_leds_br u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/front_cam_led_br   u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/dot_led_br         u:object_r:sysfs_leds:s0
 
 # Media
 genfscon sysfs /devices/platform/soc/aa00000.qcom,vidc/sku_version              u:object_r:vendor_sysfs_sku:s0
