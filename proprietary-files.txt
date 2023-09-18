@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from Spacewar-T1.5-230706-1942
+# All unpinned blobs are extracted from Spacewar-T2.0-230901-1652
 
 # ACDB
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
