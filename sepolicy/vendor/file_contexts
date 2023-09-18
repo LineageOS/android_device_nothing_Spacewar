@@ -1,5 +1,25 @@
 # Camera
-/vendor/lib(64)?/libipebpsstriping\.so      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libipebpsstriping\.so                             u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib64/libmpbase\.so                        u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_super_night_raw\.so                       u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_portrait_super_night_raw\.so              u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_dark_vision_raw\.so                       u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_beautyshot\.so                            u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_singlecam_bokeh\.so                       u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_hdr_detection\.so                         u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_aiscenedetection\.so                      u:object_r:same_process_hal_file:s0
+/vendor/lib64/libmouth_mask_detection.arcsoft\.so                  u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_watermark\.so                             u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_portrait_distortion_correction\.so        u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_high_dynamic_range\.so                    u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_low_light_hdr\.so                         u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_mf_superresolution\.so                    u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_superportrait\.so                         u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_dualcam_refocus_image\.so                 u:object_r:same_process_hal_file:s0
+/vendor/lib64/libofflinepostprocclient\.so                         u:object_r:same_process_hal_file:s0
+/vendor/lib64/libarcsoft_dualcam_refocus_video\.so                 u:object_r:same_process_hal_file:s0
+/vendor/lib64/libcamxextension_night\.so                           u:object_r:same_process_hal_file:s0
+/vendor/lib64/libcamxextension_algo\.so                            u:object_r:same_process_hal_file:s0
 
 # Devices
 /dev/goodix_fp              u:object_r:fingerprint_device:s0

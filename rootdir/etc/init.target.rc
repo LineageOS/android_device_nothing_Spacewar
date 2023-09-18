@@ -171,7 +171,7 @@ on boot
     chmod 0666 /sys/class/drm/sde-conn-1-DSI-1/hbm_mode
     # add for cit to read panel_id
     chown system system /sys/class/drm/sde-conn-1-DSI-1/panel_id
-    chmod 0600 /sys/class/drm/sde-conn-1-DSI-1/panel_id
+    chmod 0666 /sys/class/drm/sde-conn-1-DSI-1/panel_id
     # add for cit to write leds
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/all_leds_effect
     #add for TP to write mode
@@ -200,6 +200,7 @@ on boot
     #add for hal write lednode
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/wired_charging_leds
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/random_delay
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/frame_leds_effect
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/random_leds_effect
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/keybd_leds_effect
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/wlr_charging_leds
