@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "354754db_2c2baf58",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 31890
+      },
+      "writtenOn": "2023-09-20T21:49:45Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_nothing_Spacewar/+/366721",
+      "parentUuid": "8a7c6330_40e9e9a5",
+      "revId": "60c990bcf22b0d267d863a0a03427ffdb06f0405",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3879eab4_a3311b80",
@@ -31,6 +49,24 @@
       "writtenOn": "2023-09-20T17:31:03Z",
       "side": 1,
       "message": "these are only required if you plan to ship stock camera app ( which will require importing more arcsoft libs",
+      "revId": "60c990bcf22b0d267d863a0a03427ffdb06f0405",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c5ddbdb_934c42dc",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 31890
+      },
+      "writtenOn": "2023-09-20T21:49:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3879eab4_a3311b80",
       "revId": "60c990bcf22b0d267d863a0a03427ffdb06f0405",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
