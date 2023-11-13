@@ -7,9 +7,6 @@ persist.vendor.bluetooth.modem_nv_support=true
 # Camera
 camera.disable_zsl_mode=true
 
-# Charger
-ro.charger.enable_suspend=1
-
 # CNE
 persist.vendor.cne.feature=1
 
