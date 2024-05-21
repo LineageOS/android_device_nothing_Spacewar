@@ -320,8 +320,7 @@ void SysfsPollingOneShotSensor::run() {
         continue;
       }
 
-      if (mPolls[1].revents == mPolls[1].events &&
-          readBool(mPollFd, true /* seek */)) {
+      if (mPolls[1].revents == mPolls[1].events && readFd(mPollFd)) {
         activate(false, false, false);
         mCallback->postEvents(readEvents(), isWakeUpSensor());
       } else if (mPolls[0].revents == mPolls[0].events) {
@@ -353,6 +352,10 @@ std::vector<Event> SysfsPollingOneShotSensor::readEvents() {
 void SysfsPollingOneShotSensor::fillEventData(Event &event) {
   event.u.data[0] = 0;
   event.u.data[1] = 0;
+}
+
+bool SysfsPollingOneShotSensor::readFd(const int fd) {
+  return readBool(fd, true /* seek */);
 }
 
 }  // namespace implementation

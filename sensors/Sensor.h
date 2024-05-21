@@ -107,6 +107,7 @@ public:
   virtual void setOperationMode(OperationMode mode) override;
   virtual std::vector<Event> readEvents() override;
   virtual void fillEventData(Event &event);
+  virtual bool readFd(const int fd);
 
 protected:
   virtual void run() override;
