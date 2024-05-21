@@ -144,6 +144,23 @@ public:
                 static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 2)) {}
 };
 
+class UdfpsSensor : public SysfsPollingOneShotSensor {
+public:
+  UdfpsSensor(int32_t sensorHandle, ISensorsEventCallback *callback)
+      : SysfsPollingOneShotSensor(
+            sensorHandle, callback,
+            "/sys/class/spi_master/spi0/spi0.0/fts_gesture_fod_pressed",
+            "UDFPS Sensor", "org.lineageos.sensor.udfps",
+            static_cast<SensorType>(
+                static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 3)) {}
+  virtual void fillEventData(Event &event);
+  virtual bool readFd(const int fd);
+
+private:
+  int mScreenX;
+  int mScreenY;
+};
+
 }  // namespace implementation
 }  // namespace subhal
 }  // namespace V2_1
