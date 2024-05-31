@@ -133,6 +133,17 @@ public:
                 static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 1)) {}
 };
 
+class SingleTapSensor : public SysfsPollingOneShotSensor {
+public:
+  SingleTapSensor(int32_t sensorHandle, ISensorsEventCallback *callback)
+      : SysfsPollingOneShotSensor(
+            sensorHandle, callback,
+            "/sys/class/spi_master/spi0/spi0.0/fts_gesture_single_tap_pressed",
+            "Single Tap Sensor", "org.lineageos.sensor.single_touch",
+            static_cast<SensorType>(
+                static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 2)) {}
+};
+
 }  // namespace implementation
 }  // namespace subhal
 }  // namespace V2_1
