@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89377a50_aaf62a6b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31890
+      },
+      "writtenOn": "2025-02-09T18:14:15Z",
+      "side": 1,
+      "message": "Looks to like it breaks battery usage stats, need to investigate",
+      "revId": "776177d98facc740f75bd5dffc3402a4c6fd7c15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
