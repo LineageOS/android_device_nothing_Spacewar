@@ -98,12 +98,30 @@ vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
+vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/lib_lvacfs.so
-vendor/lib/liblvacfs_wrapper.so
-vendor/lib/libaudcal.so
+vendor/lib/liba2dpoffload.so
 vendor/lib/libadiertac.so
 vendor/lib/libdirac.so
 vendor/lib/soundfx/libdiraceffect_NT.so
+vendor/lib/libadm.so
+vendor/lib/libaudcal.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libbatterylistener.so
+vendor/lib/libcomprcapture.so
+vendor/lib/libdrc.so
+vendor/lib/libexthwplugin.so
+vendor/lib/libhdmiedid.so
+vendor/lib/libhdmipassthru.so
+vendor/lib/liblvacfs_wrapper.so
+vendor/lib/libhfp.so
+vendor/lib/libqtigef.so
+vendor/lib/libsndmonitor.so
+vendor/lib/libspkrprot.so
+vendor/lib/libssrec.so
+vendor/lib/libsurround_3mic_proc.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libadiertac.so
 
@@ -113,11 +131,13 @@ vendor/firmware/tfa98xx.cnt
 # Audio configs
 vendor/etc/audio/sku_yupik/audio_io_policy.conf
 vendor/etc/audio/sku_yupik/audio_platform_info_intcodec.xml
+vendor/etc/audio/sku_yupik/audio_platform_info_yupikqrd.xml
 vendor/etc/audio/sku_yupik/audio_tuning_mixer.txt
 vendor/etc/audio/sku_yupik/sound_trigger_mixer_paths_yupikqrd.xml
 vendor/etc/audio/sku_yupik/sound_trigger_platform_info.xml
 vendor/etc/audio_platform_info.xml
 vendor/etc/audio_platform_info_intcodec.xml
+vendor/etc/audio_platform_info_qrd.xml
 vendor/etc/audio_tuning_mixer.txt
 vendor/etc/mixer_paths.xml
 vendor/etc/mixer_paths_qrd.xml
