@@ -178,10 +178,6 @@ firmware_directories /vendor/firmware_mnt/image/ /mnt/vendor/persist/
 /dev/bus/usb/*                      0660  root    usb
 /dev/hidraw*                        0660  root    usb
 
-# gene.yan add for NFC @{
-/dev/st21nfc              0660   nfc        nfc
-# @}
-
 #rawdump
 /dev/block/platform/soc/*/by-name/rawdump       0660   root     system
 
