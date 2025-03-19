@@ -505,7 +505,6 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Camera firmware
-vendor/firmware/CAMERA_ICP.elf
 vendor/firmware/CAMERA_ICP_170.elf
 
 # CDSP
@@ -600,52 +599,6 @@ vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-
-# CVP firmware
-vendor/firmware/evass-lt.b00
-vendor/firmware/evass-lt.b01
-vendor/firmware/evass-lt.b02
-vendor/firmware/evass-lt.b03
-vendor/firmware/evass-lt.b04
-vendor/firmware/evass-lt.b05
-vendor/firmware/evass-lt.b06
-vendor/firmware/evass-lt.b07
-vendor/firmware/evass-lt.b08
-vendor/firmware/evass-lt.b09
-vendor/firmware/evass-lt.b10
-vendor/firmware/evass-lt.b11
-vendor/firmware/evass-lt.b12
-vendor/firmware/evass-lt.b13
-vendor/firmware/evass-lt.b14
-vendor/firmware/evass-lt.b15
-vendor/firmware/evass-lt.b16
-vendor/firmware/evass-lt.b17
-vendor/firmware/evass-lt.b18
-vendor/firmware/evass-lt.b19
-vendor/firmware/evass-lt.mbn
-vendor/firmware/evass-lt.mdt
-vendor/firmware/evass.b00
-vendor/firmware/evass.b01
-vendor/firmware/evass.b02
-vendor/firmware/evass.b03
-vendor/firmware/evass.b04
-vendor/firmware/evass.b05
-vendor/firmware/evass.b06
-vendor/firmware/evass.b07
-vendor/firmware/evass.b08
-vendor/firmware/evass.b09
-vendor/firmware/evass.b10
-vendor/firmware/evass.b11
-vendor/firmware/evass.b12
-vendor/firmware/evass.b13
-vendor/firmware/evass.b14
-vendor/firmware/evass.b15
-vendor/firmware/evass.b16
-vendor/firmware/evass.b17
-vendor/firmware/evass.b18
-vendor/firmware/evass.b19
-vendor/firmware/evass.mbn
-vendor/firmware/evass.mdt
 
 # CVP models
 vendor/etc/cvp/v2.0/facedetection/model1.dat
@@ -921,13 +874,6 @@ vendor/lib64/libllvm-qcom.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
 # Graphics firmware
-vendor/firmware/a615_zap.b00
-vendor/firmware/a615_zap.b01
-vendor/firmware/a615_zap.b02
-vendor/firmware/a615_zap.elf
-vendor/firmware/a615_zap.mdt
-vendor/firmware/a619_gmu.bin
-vendor/firmware/a630_sqe.fw
 vendor/firmware/a660_gmu.bin
 vendor/firmware/a660_sqe.fw
 vendor/firmware/a660_zap.b00
@@ -948,13 +894,6 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
 vendor/firmware/yupik_ipa_fws.b00
 vendor/firmware/yupik_ipa_fws.b01
 vendor/firmware/yupik_ipa_fws.b02
@@ -1519,50 +1458,6 @@ vendor/firmware/vpu20_1v.b19
 vendor/firmware/vpu20_1v.mbn
 vendor/firmware/vpu20_1v.mdt
 vendor/firmware/vpu20_1v_unsigned.mbn
-vendor/firmware/vpu20_2v.b01
-vendor/firmware/vpu20_2v.b02
-vendor/firmware/vpu20_2v.b03
-vendor/firmware/vpu20_2v.b04
-vendor/firmware/vpu20_2v.b05
-vendor/firmware/vpu20_2v.b06
-vendor/firmware/vpu20_2v.b07
-vendor/firmware/vpu20_2v.b08
-vendor/firmware/vpu20_2v.b09
-vendor/firmware/vpu20_2v.b10
-vendor/firmware/vpu20_2v.b11
-vendor/firmware/vpu20_2v.b12
-vendor/firmware/vpu20_2v.b13
-vendor/firmware/vpu20_2v.b14
-vendor/firmware/vpu20_2v.b15
-vendor/firmware/vpu20_2v.b16
-vendor/firmware/vpu20_2v.b17
-vendor/firmware/vpu20_2v.b18
-vendor/firmware/vpu20_2v.b19
-vendor/firmware/vpu20_2v.mbn
-vendor/firmware/vpu20_2v.mdt
-vendor/firmware/vpu20_2v_unsigned.mbn
-vendor/firmware/vpu20_4v.b01
-vendor/firmware/vpu20_4v.b02
-vendor/firmware/vpu20_4v.b03
-vendor/firmware/vpu20_4v.b04
-vendor/firmware/vpu20_4v.b05
-vendor/firmware/vpu20_4v.b06
-vendor/firmware/vpu20_4v.b07
-vendor/firmware/vpu20_4v.b08
-vendor/firmware/vpu20_4v.b09
-vendor/firmware/vpu20_4v.b10
-vendor/firmware/vpu20_4v.b11
-vendor/firmware/vpu20_4v.b12
-vendor/firmware/vpu20_4v.b13
-vendor/firmware/vpu20_4v.b14
-vendor/firmware/vpu20_4v.b15
-vendor/firmware/vpu20_4v.b16
-vendor/firmware/vpu20_4v.b17
-vendor/firmware/vpu20_4v.b18
-vendor/firmware/vpu20_4v.b19
-vendor/firmware/vpu20_4v.mbn
-vendor/firmware/vpu20_4v.mdt
-vendor/firmware/vpu20_4v_unsigned.mbn
 
 # WiFi
 vendor/bin/cnss-daemon
