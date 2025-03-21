@@ -18,9 +18,6 @@ debug.sf.enable_hwc_vds=1
 persist.sys.sf.native_mode=260
 sys.brightness.disable_gamma_conversion=true
 
-# Fingerprint
-ro.bootloader.locked=0
-
 # Media
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
