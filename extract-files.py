@@ -46,6 +46,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/bin/wfdservice': blob_fixup()
+        .add_needed('libwfdservice_shim_v1.so'),
     'vendor/lib64/hw/fingerprint.lahaina.so': blob_fixup()
         .fix_soname(),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib/mediadrm/libwvdrmengine.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
