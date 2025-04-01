@@ -52,6 +52,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcrypto_shim.so'),
     ('vendor/lib64/libgf_hal.so'): blob_fixup()
         .sig_replace('72 6F 2E 62 6F 6F 74 2E 66 6C 61 73 68 2E 6C 6F 63 6B 65 64', '72 6F 2E 62 6F 6F 74 6C 6F 61 64 65 72 2E 6C 6F 63 6B 65 64'),
+    'system_ext/bin/wfdservice': blob_fixup()
+        .add_needed('libwfdservice_shim.so'),
     ('system_ext/lib/libwfdservice.so', 'system_ext/lib64/libwfdservice.so'): blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
 }  # fmt: skip
