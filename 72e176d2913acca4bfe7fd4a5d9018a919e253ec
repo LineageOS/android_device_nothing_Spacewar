@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4d7cbc5e_fb06eb5a",
+        "filename": "extract-files.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-07T17:05:51Z",
+      "side": 1,
+      "message": "put above here; also v1 doesn\u0027t exist anymore",
+      "revId": "72e176d2913acca4bfe7fd4a5d9018a919e253ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
