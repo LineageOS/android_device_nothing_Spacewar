@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5482ace1_f0fecd60",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-07T23:01:16Z",
+      "side": 1,
+      "message": "For non-versioned shim pick the other change.",
+      "revId": "f8fe91f0c949c4f64219a773917991a9e6b284ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
