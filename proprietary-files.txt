@@ -724,7 +724,7 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 vendor/lib64/libesepmconfig.so
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.lahaina.so
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.lahaina.so;FIX_SONAME
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
