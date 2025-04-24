@@ -16,6 +16,23 @@
       "message": "This should work fine, please test.",
       "revId": "a00caaf8cc2e275696dfcabc941c6d7b91971a6f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "294449ed_29ae1796",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-24T23:07:17Z",
+      "side": 1,
+      "message": "Pick https://review.lineageos.org/c/LineageOS/android_hardware_lineage_interfaces/+/428641 when testing this change alone. i.e. do not switch to AIDL just yet.",
+      "revId": "a00caaf8cc2e275696dfcabc941c6d7b91971a6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
