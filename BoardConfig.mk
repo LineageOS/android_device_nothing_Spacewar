@@ -141,6 +141,9 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
+# PowerShare
+TARGET_POWERSHARE_PATH := /sys/class/qcom-battery/wireless_boost_en
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop

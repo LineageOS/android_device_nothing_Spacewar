@@ -10,7 +10,6 @@
 
 # HALs
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.nothing     u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.nothing                    u:object_r:hal_lineage_powershare_default_exec:s0
 
 # LEDs
 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led(/.*)?                          u:object_r:sysfs_leds:s0

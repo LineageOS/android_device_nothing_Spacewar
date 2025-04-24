@@ -289,7 +289,7 @@ PRODUCT_COPY_FILES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.nothing
+    vendor.lineage.powershare@1.0-service.default
 
 # QTI
 PRODUCT_PACKAGES += \
