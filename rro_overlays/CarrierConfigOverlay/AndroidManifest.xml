@@ -15,7 +15,7 @@
 -->
 <!-- Cheryl specific carrier overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.carrierconfig.oneplus"
+    package="com.android.carrierconfig.nothing"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />
