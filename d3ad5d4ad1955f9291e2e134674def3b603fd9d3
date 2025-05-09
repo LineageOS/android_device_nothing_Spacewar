@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7970b59b_650299d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31890
+      },
+      "writtenOn": "2025-05-09T10:31:43Z",
+      "side": 1,
+      "message": "@wednisegit@gmail.com did you check it on Spacewar or just blindly V+1?",
+      "revId": "d3ad5d4ad1955f9291e2e134674def3b603fd9d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
