@@ -282,7 +282,7 @@ $(call inherit-product, hardware/nothing/nt-fwk/nt-fwk.mk)
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr \
+    android.hardware.power-service-qti \
     libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
