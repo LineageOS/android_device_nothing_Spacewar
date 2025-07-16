@@ -16,6 +16,23 @@
       "message": "I don\u0027t think this is proper. To go back to QTI power hal you need the QTI perf stack and I see you have for example the dummy libqti-perfd-client.",
       "revId": "a771b623a8e06737e64bbc42862a44405ba646ea",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0cd4f7f3_4c647160",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-16T08:09:40Z",
+      "side": 1,
+      "message": "See this: https://review.lineageos.org/q/I87b283206f462fb5c8ec9cdd303ae2934fe9bfc4.\n\nThat what you actually remove when swthcing from QTI power hal to libpermgr.",
+      "revId": "a771b623a8e06737e64bbc42862a44405ba646ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
