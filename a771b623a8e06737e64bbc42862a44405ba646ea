@@ -50,6 +50,24 @@
       "message": "Temp blocking to prevent accidental merge.",
       "revId": "a771b623a8e06737e64bbc42862a44405ba646ea",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d15354ed_8a0e79c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35341
+      },
+      "writtenOn": "2025-07-16T08:43:43Z",
+      "side": 1,
+      "message": "Thank you for the lead, we\u0027ll look into it.\nThe reason we\u0027re doing this in the first place is that we were noticing consistent UI lags, and after doing this, they were gone (meaning the UI became noticeably smoother). At this point, perhaps the issue is caused by the presence of lineage-libperfmgr rather than being improved by the QTI power service. Might this be caused by a bad powerhint.xml?",
+      "parentUuid": "0cd4f7f3_4c647160",
+      "revId": "a771b623a8e06737e64bbc42862a44405ba646ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
