@@ -33,6 +33,23 @@
       "message": "See this: https://review.lineageos.org/q/I87b283206f462fb5c8ec9cdd303ae2934fe9bfc4.\n\nThat what you actually remove when swthcing from QTI power hal to libpermgr.",
       "revId": "a771b623a8e06737e64bbc42862a44405ba646ea",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4cca2547_77d37db4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-16T08:12:17Z",
+      "side": 1,
+      "message": "Temp blocking to prevent accidental merge.",
+      "revId": "a771b623a8e06737e64bbc42862a44405ba646ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
