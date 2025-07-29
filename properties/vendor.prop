@@ -142,6 +142,9 @@ debug.stagefright.c2inputsurface=-1
 # OEM Unlock
 ro.oem_unlock_supported=1
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # QTEE
 persist.vendor.qteeconnector.retrying_interval=30
 persist.vendor.qteeconnector.retrying_timeout=2000
