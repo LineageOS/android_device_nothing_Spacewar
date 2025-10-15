@@ -155,6 +155,15 @@
         <fqname>@1.0::IFmHci/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.perf</name>
+        <transport>hwbinder</transport>
+        <version>2.2</version>
+        <interface>
+            <name>IPerf</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.qseecom</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IQSEECom/default</fqname>
