@@ -62,6 +62,9 @@ PRODUCT_PACKAGES += \
     ParanoidGlyphPhone1 \
     GlyphAdapter
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-glyph.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-glyph.xml
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
