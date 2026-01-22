@@ -16,6 +16,24 @@
       "message": "Don\u0027t insert a newline if it wasn\u0027t there before.",
       "revId": "565950c310b09f9b29710d2232bc008a022b032b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63760405_503117b7",
+        "filename": "overlay-lineage/lineage-sdk/packages/LineageSettingsProvider/res/values/defaults.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 31890
+      },
+      "writtenOn": "2026-01-22T22:09:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7b21f89c_29112622",
+      "revId": "565950c310b09f9b29710d2232bc008a022b032b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
