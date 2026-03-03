@@ -281,7 +281,7 @@ PRODUCT_PACKAGES += \
     Tag
 
 # Nt-fwk
-$(call inherit-product, hardware/nothing/nt-fwk/nt-fwk.mk)
+$(call inherit-product, hardware/nothing/packages/nt-fwk/nt-fwk.mk)
 
 # Power
 PRODUCT_PACKAGES += \
