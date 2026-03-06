@@ -13,6 +13,7 @@
 #include <poll.h>
 #include <thread>
 #include <unistd.h>
+#include <atomic>
 
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
 
@@ -28,7 +29,7 @@ static bool readBool(int fd) {
 
     rc = read(fd, &c, sizeof(char));
     if (rc != 1) {
-        LOG(ERROR) << "failed to seek fd, err: " << rc;
+        LOG(ERROR) << "failed to read fd, err: " << rc;
         return false;
     }
 
@@ -36,33 +37,55 @@ static bool readBool(int fd) {
 }
 
 class NothingUdfpsHandler : public UdfpsHandler {
-  public:
-    void init(fingerprint_device_t *device) {
-        mDevice = device;
+public:
+    NothingUdfpsHandler() : mDevice(nullptr), mRunning(false) {}
 
-    std::thread([this]() {
-        int fd = open(FOD_UI_PATH, O_RDONLY);
-        if (fd < 0) {
-            LOG(ERROR) << "failed to open fd, err: " << fd;
+    ~NothingUdfpsHandler() {
+        mRunning = false;
+    }
+
+    void init(fingerprint_device_t *device) {
+        if (!device) {
+            LOG(ERROR) << "fingerprint device is null, skipping init";
             return;
         }
 
-        struct pollfd fodUiPoll = {
+        mDevice = device;
+        mRunning = true;
+
+        std::thread([this]() {
+            int fd = open(FOD_UI_PATH, O_RDONLY);
+            if (fd < 0) {
+                LOG(ERROR) << "failed to open fd, err: " << fd;
+                mRunning = false;
+                return;
+            }
+
+            struct pollfd fodUiPoll = {
                 .fd = fd,
                 .events = POLLERR | POLLPRI,
                 .revents = 0,
-        };
+            };
 
-        while (true) {
-            int rc = poll(&fodUiPoll, 1, -1);
-            if (rc < 0) {
-                LOG(ERROR) << "failed to poll fd, err: " << rc;
-                continue;
+            while (mRunning) {
+                int rc = poll(&fodUiPoll, 1, -1);
+                if (rc < 0) {
+                    LOG(ERROR) << "failed to poll fd, err: " << rc;
+                    continue;
+                }
+
+                if (!mRunning) break;
+
+                if (!mDevice) {
+                    LOG(ERROR) << "mDevice is null, exiting poll thread";
+                    break;
+                }
+
+                mDevice->goodixExtCmd(mDevice, readBool(fd) ? 1 : 0, 0);
             }
 
-            mDevice->goodixExtCmd(mDevice, readBool(fd) ? 1 : 0, 0);
-        }
-    }).detach();
+            close(fd);
+        }).detach();
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
@@ -81,8 +104,9 @@ class NothingUdfpsHandler : public UdfpsHandler {
         // nothing
     }
 
-  private:
+private:
     fingerprint_device_t *mDevice;
+    std::atomic<bool> mRunning;
 };
 
 static UdfpsHandler* create() {
