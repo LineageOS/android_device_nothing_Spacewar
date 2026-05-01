@@ -1282,11 +1282,9 @@ vendor/lib64/vendor.qti.ims.rcsuce@1.2.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
 
-# Richtap - from eqs 14-U1SQS34.52-21-1-10 504bf-893e0 release-keys
-vendor/lib64/libaacvibrator.so|a58aac68c3a3a964adfcda9bb948aa7eef089f58
-
-# Richtap config
+# Richtap
 odm/etc/aac_richtap.config
+vendor/lib64/libaacvibrator.so
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
