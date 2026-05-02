@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "904cbcc7_add1f950",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-05-02T21:17:09Z",
+      "side": 1,
+      "message": "Have you actually checked if NothingOS maps to those values for Spacewar ? I know that for Pacman and PacmanPro they only make use of 2 different values, and for Tetris, Galaga and Galaxian they only use 1 for all effects.\n\nhttps://github.com/Nothing-2A/android_device_nothing_Aerodactyl/commit/ac70efe34873b2b7d7db0858672b2c5d181489ad",
+      "revId": "ffb336c33923e073245e2e5d0a0b52df05ca1a05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
