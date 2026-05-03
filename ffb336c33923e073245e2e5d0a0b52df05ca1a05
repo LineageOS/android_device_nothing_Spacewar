@@ -16,6 +16,24 @@
       "message": "Have you actually checked if NothingOS maps to those values for Spacewar ? I know that for Pacman and PacmanPro they only make use of 2 different values, and for Tetris, Galaga and Galaxian they only use 1 for all effects.\n\nhttps://github.com/Nothing-2A/android_device_nothing_Aerodactyl/commit/ac70efe34873b2b7d7db0858672b2c5d181489ad",
       "revId": "ffb336c33923e073245e2e5d0a0b52df05ca1a05",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e60ebea1_2932e999",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34300
+      },
+      "writtenOn": "2026-05-03T16:39:56Z",
+      "side": 1,
+      "message": "I tested all these parameters. I took all the values ​​from NothingOS 1.5.6; users prefer the vibration from those versions. I only changed the double-click because the stock pattern for it is taken from a .he file.\n\nOn newer versions of nos, vibration patterns are implemented in a strange way: when the vibration strength changes, the effect ID changes, but the vibration strength remains the same...",
+      "parentUuid": "904cbcc7_add1f950",
+      "revId": "ffb336c33923e073245e2e5d0a0b52df05ca1a05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
