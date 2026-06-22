@@ -44,12 +44,14 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    ('system/framework/WfdCommon.jar'): blob_fixup()
+        .apktool_patch('blob-patches/WfdCommon.patch'),
+    ('system_ext/lib64/libwfdservice.so'): blob_fixup()
+        .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib/mediadrm/libwvdrmengine.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     ('vendor/lib64/libgf_hal.so'): blob_fixup()
         .sig_replace('72 6F 2E 62 6F 6F 74 2E 66 6C 61 73 68 2E 6C 6F 63 6B 65 64', '72 6F 2E 62 6F 6F 74 6C 6F 61 64 65 72 2E 6C 6F 63 6B 65 64'),
-    ('system_ext/lib64/libwfdnative.so'): blob_fixup()
-        .add_needed('libinput_shim.so'),
     ('vendor/etc/msm_irqbalance.conf'): blob_fixup()
         .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
     ('vendor/lib64/libdpps.so', 'vendor/lib64/libsnapdragoncolor-manager.so',): blob_fixup()
