@@ -22,6 +22,30 @@
       },
       "revId": "e7b65ff5494b558314ee037b8a0e70afc9d378b0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1570c576_6155f155",
+        "filename": "sensors/Sensor.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 34300
+      },
+      "writtenOn": "2026-08-18T18:08:34Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "6540ac4d_07e26e9b",
+      "range": {
+        "startLine": 466,
+        "startChar": 24,
+        "endLine": 466,
+        "endChar": 41
+      },
+      "revId": "e7b65ff5494b558314ee037b8a0e70afc9d378b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
