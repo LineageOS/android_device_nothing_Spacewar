@@ -134,6 +134,26 @@ class SingleTapSensor : public OneShotSensor {
     int mPollFd;
 };
 
+class DoubleTapSensor : public OneShotSensor {
+  public:
+    DoubleTapSensor(int32_t sensorHandle, ISensorsEventCallback* callback);
+    virtual ~DoubleTapSensor() override;
+
+    virtual void activate(bool enable) override;
+    virtual void setOperationMode(OperationMode mode) override;
+
+  protected:
+    virtual void run() override;
+    virtual std::vector<Event> readEvents();
+
+  private:
+    void interruptPoll();
+
+    struct pollfd mPolls[2];
+    int mWaitPipeFd[2];
+    int mPollFd;
+};
+
 }  // namespace implementation
 }  // namespace subhal
 }  // namespace V2_1
