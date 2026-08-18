@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fa5d3266_b1c1f60d",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 31890
+      },
+      "writtenOn": "2026-08-18T11:36:19Z",
+      "side": 1,
+      "message": "Unnecessary whitespace",
+      "revId": "141fba6f40a7871f8c02695cb8c815fc917b4239",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
