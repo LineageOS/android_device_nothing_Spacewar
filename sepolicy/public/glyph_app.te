@@ -1,1 +1,1 @@
-type glyph_app, domain;
+type glyph_app, domain, coredomain;
