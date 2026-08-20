@@ -213,6 +213,7 @@ on boot
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/exclamation_leds_effect
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_leds_effect
     chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/setting_br
+    chown system system /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led/device_color
 
     # Hung_task
     write /proc/sys/kernel/hung_task_timeout_secs 180
