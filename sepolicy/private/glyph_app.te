@@ -29,4 +29,6 @@ allow glyph_app system_app_data_file:{
   lnk_file
 } create_file_perms;
 
+allow glyph_app sysfs_leds:dir search;
+
 allow glyph_app thermal_service:service_manager find;
