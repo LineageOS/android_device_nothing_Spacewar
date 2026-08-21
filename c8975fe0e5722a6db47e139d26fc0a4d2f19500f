@@ -16,6 +16,24 @@
       "message": "A similar change was done from my end for Spacewar long back\nRef: https://github.com/StudioKeys-Dumps/android_device_nothing_Spacewar/commit/85b018d0dfae7943d1d652416f1d42d2963793e9\n\nIgnore the other additions and deletions as i did it to build AOSP and very early 24.0",
       "revId": "c8975fe0e5722a6db47e139d26fc0a4d2f19500f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "549bad5a_67b9ce2d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34120
+      },
+      "writtenOn": "2026-08-21T16:22:10Z",
+      "side": 1,
+      "message": "Good to know, thanks",
+      "parentUuid": "0b945018_62603dcf",
+      "revId": "c8975fe0e5722a6db47e139d26fc0a4d2f19500f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
