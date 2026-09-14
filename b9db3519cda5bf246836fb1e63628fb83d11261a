@@ -16,6 +16,23 @@
       "message": "Should be droppable after \nI5dde1b0f41b06cf691bc86de4be2df0c1c008596",
       "revId": "b9db3519cda5bf246836fb1e63628fb83d11261a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de46c029_bd408dca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-09-14T04:01:48Z",
+      "side": 1,
+      "message": "Drop as vendor counterpart is merged",
+      "revId": "b9db3519cda5bf246836fb1e63628fb83d11261a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
