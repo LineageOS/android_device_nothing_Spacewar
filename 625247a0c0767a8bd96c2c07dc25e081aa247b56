@@ -16,6 +16,23 @@
       "message": "no need after Ibb2c5e9191744f6e15f6bced337ba7d0ed9681ca",
       "revId": "625247a0c0767a8bd96c2c07dc25e081aa247b56",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f9a6612_0579997e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-09-14T04:02:39Z",
+      "side": 1,
+      "message": "Also drop since upstream changes has gone in",
+      "revId": "625247a0c0767a8bd96c2c07dc25e081aa247b56",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
