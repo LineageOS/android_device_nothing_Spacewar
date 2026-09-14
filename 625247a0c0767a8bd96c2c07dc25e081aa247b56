@@ -33,6 +33,23 @@
       "message": "Also drop since upstream changes has gone in",
       "revId": "625247a0c0767a8bd96c2c07dc25e081aa247b56",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37d6ed68_8845cc60",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-14T08:01:59Z",
+      "side": 1,
+      "message": "Drop and pick https://review.lineageos.org/q/I40424ec785b2f1674a5eefe2150bda5c0a170e61",
+      "revId": "625247a0c0767a8bd96c2c07dc25e081aa247b56",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
