@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b964e343_7ae827dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31890
+      },
+      "writtenOn": "2026-09-17T06:26:22Z",
+      "side": 1,
+      "message": "Virtual v+1, unrelated rebase",
+      "revId": "02595ffcc113f6664f87772cdbeedc30c74267f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
